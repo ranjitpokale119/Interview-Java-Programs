@@ -25,6 +25,6 @@ public class CharOccurrencesInString {
 
 	public static void main(String a[]) {
 		CharOccurrencesInString dcf = new CharOccurrencesInString();
-		dcf.findIt("India is my country");
+		dcf.findIt("India is my country");//Chnaracter count
 	}
 }
