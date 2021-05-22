@@ -1,4 +1,4 @@
-package ExceptionHandling;
+package com.Java7.ExceptionHandling;
 
 public class TestThrow1 {
 	static void validate(int age) {

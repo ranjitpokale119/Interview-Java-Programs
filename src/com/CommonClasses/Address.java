@@ -37,4 +37,14 @@ public class Address {
     public void setPincode(long pincode) {
         this.pincode = pincode;
     }
+
+    @Override
+    public String toString() {
+        return "Address{" +
+                "addressId=" + addressId +
+                ", addressCity='" + addressCity + '\'' +
+                ", addressCountry='" + addressCountry + '\'' +
+                ", pincode=" + pincode +
+                '}';
+    }
 }

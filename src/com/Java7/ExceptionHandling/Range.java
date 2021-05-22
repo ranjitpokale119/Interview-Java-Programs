@@ -1,4 +1,4 @@
-package ExceptionHandling;
+package com.Java7.ExceptionHandling;
 
 import java.util.Iterator;
 import java.util.NoSuchElementException;
@@ -6,7 +6,7 @@ import java.util.Optional;
 
 public class Range implements Iterable<Integer> {
 	private int start, end;
-	private int _= 10;
+	//private int _= 10;
 	private Optional<Integer> nn;
 	public Range(int start, int end) {
 		this.start = start;

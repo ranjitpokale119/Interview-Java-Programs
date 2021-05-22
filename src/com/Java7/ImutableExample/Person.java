@@ -1,4 +1,4 @@
-package immutable.EmployeeImutableExample;
+package com.Java7.ImutableExample;
 
 /*In order to create an immutable class, you should follow the below steps:
 
@@ -14,14 +14,14 @@ If the class holds a mutable object:
 Inside the constructor, make sure to use a clone copy of the passed argument and never set your mutable field to the real instance passed through constructor, this is to prevent the clients who pass the object from modifying it afterwards.
 Make sure to always return a clone copy of the field and never return the real object instance.
 */
-public final class Employee {
+public final class Person {
 
     final int a = 10;
     private String name;
     private final Address address;
 
 
-    private Employee(String name, Address address) {
+    private Person(String name, Address address) {
         this.name = name;
         this.address = address.clone();
     }

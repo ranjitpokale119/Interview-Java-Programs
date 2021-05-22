@@ -1,4 +1,4 @@
-package ExceptionHandling;
+package com.Java7.ExceptionHandling;
 
 public class MySingleTon {
 

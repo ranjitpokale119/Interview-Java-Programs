@@ -1,4 +1,4 @@
-package ImmutableClassExa;
+package com.Java7.ImmutableClassExa;
 
 import java.lang.reflect.Field;
 

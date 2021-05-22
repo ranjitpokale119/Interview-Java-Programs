@@ -1,4 +1,4 @@
-package ExceptionHandling;
+package com.Java7.ExceptionHandling;
 
 class InvalidAgeException extends Exception {
 	/**
