@@ -16,11 +16,11 @@ public class SortArray {
 
     private static void sortArrayUsingJava8(int[] b) {
         List<Integer> collect = Arrays.stream(b).sorted().boxed().collect(Collectors.toList());
-        System.out.println("sorted = " + collect);
+        System.out.println("Sorted Using Java 8 = " + collect);
     }
 
     private static void sortArrayUsingJava7(int[] a) {
         Arrays.sort(a);
-        System.out.println("Arrays.toString(a) = " + Arrays.toString(a));
+        System.out.println("Sorted Using Java 7 = " + Arrays.toString(a));
     }
 }

@@ -6,7 +6,7 @@ interface Messageable {
 
 class Message {
     Message(String msg) {
-        /*There are Call by reference , call by value and now there is call by method*/
+        /* There are Call by reference, call by value and now there is call by method*/
         //Traditional Syso
         System.out.print(msg);
         //Method reference syso

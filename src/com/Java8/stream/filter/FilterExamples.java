@@ -22,6 +22,8 @@ public class FilterExamples {
         printAllEmployeeWhoseSalGreterThanGiven(employeeList, 40000l);
         System.out.println("\n=== printMapOfEmployeeByTheirGender ====");
         printMapOfEmployeeByTheirGender(employeeList);
+        System.out.println("\n=== printAllEmployeeNamesStartingWithA ====");
+        printAllEmployeeNamesStartingWithA(employeeList);
 
 
     }
@@ -41,6 +43,10 @@ public class FilterExamples {
 
     private static void printAllEmployeeNames(List<Employee> employeeList) {
         List<String> eNames = employeeList.stream().map(e -> e.getName()).collect(Collectors.toList());
+        eNames.forEach(System.out::println);
+    }
+    private static void printAllEmployeeNamesStartingWithA(List<Employee> employeeList) {
+        List<Employee> eNames = employeeList.stream().filter(e -> e.getName().startsWith("A")).collect(Collectors.toList());
         eNames.forEach(System.out::println);
     }
 }

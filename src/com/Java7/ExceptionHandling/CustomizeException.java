@@ -9,6 +9,23 @@ class InvalidAgeException extends Exception {
 	public InvalidAgeException(String s) {
 		super(s);
 	}
+
+	//Following are the overridden methods -------------------------
+	public InvalidAgeException() {
+		super();
+	}
+
+	public InvalidAgeException(String message, Throwable cause) {
+		super(message, cause);
+	}
+
+	public InvalidAgeException(Throwable cause) {
+		super(cause);
+	}
+
+	protected InvalidAgeException(String message, Throwable cause, boolean enableSuppression, boolean writableStackTrace) {
+		super(message, cause, enableSuppression, writableStackTrace);
+	}
 }
 
 public class CustomizeException {

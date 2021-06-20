@@ -15,13 +15,14 @@ class GenericMapExample {
         map.put(6, "Mayank2"); //if the key is same it will overrite the value
 
         for (Map.Entry m : map.entrySet()) {
-            System.out.println(m.getKey() + " " + m.getValue());
+            System.out.println(m.getKey() + "-" + m.getValue());
         }
 
+        System.out.println("-----------keySet----");
         System.out.println(map.keySet());
-        System.out.println("-----------1----");
+        System.out.println("--------values-------");
         System.out.println(map.values());
-        System.out.println("--------------2-");
+        System.out.println("--------values in for loop-------");
         for (String s : map.values()) {
             System.out.println(s);
         }

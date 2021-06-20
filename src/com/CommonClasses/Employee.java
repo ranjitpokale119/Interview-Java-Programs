@@ -21,10 +21,11 @@ public class Employee {
     public static List<Employee> getAllEmployees() {
         return Arrays.asList(
                 new Employee(1, "Jay", 40000, 'M'),
-                new Employee(1, "Aakash", 50000, 'M'),
-                new Employee(1, "Vaishnavi", 70000, 'F'),
-                new Employee(1, "Sakshi", 80000, 'F'),
-                new Employee(1, "Rohan", 30000, 'M')
+                new Employee(2, "Aakash", 50000, 'M'),
+                new Employee(3, "aarav", 57000, 'M'),
+                new Employee(4, "Vaishnavi", 70000, 'F'),
+                new Employee(5, "Sakshi", 80000, 'F'),
+                new Employee(6, "Rohan", 30000, 'M')
         );
     }
 
