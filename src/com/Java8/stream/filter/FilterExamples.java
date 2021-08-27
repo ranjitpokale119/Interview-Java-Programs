@@ -3,7 +3,9 @@ package com.Java8.stream.filter;
 import com.CommonClasses.Employee;
 
 import java.util.Arrays;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 import java.util.stream.Collectors;
 
 public class FilterExamples {
@@ -25,15 +27,19 @@ public class FilterExamples {
         System.out.println("\n=== printAllEmployeeNamesStartingWithA ====");
         printAllEmployeeNamesStartingWithA(employeeList);
 
+        sortMapValuesInDecesednginOrder(Employee.getAllEmployeeMap());
+
+    }
+
+    private static void sortMapValuesInDecesednginOrder(Map<Integer, Employee> allEmployeeMap) {
 
     }
 
     private static void printMapOfEmployeeByTheirGender(List<Employee> employeeList) {
-        /*List<String> employeeNames = employeeList.stream().map(e -> e.getName()).collect(Collectors.toList());
-        Map<String,List<Employee>> map= new HashMap<>();
-        map=employeeList.stream().collect(Collectors.groupingBy(Employee::getGender,Employee::getName));
-
-        employeeNames.forEach(System.out::println);*/
+        Map<Character, List<Employee>> map =
+                employeeList.stream()
+                        .collect(Collectors.groupingBy(Employee::getGender));
+        System.out.println("map = " + map);
     }
 
     private static void printAllEmployeeWhoseSalGreterThanGiven(List<Employee> employeeList, long l) {
@@ -45,6 +51,7 @@ public class FilterExamples {
         List<String> eNames = employeeList.stream().map(e -> e.getName()).collect(Collectors.toList());
         eNames.forEach(System.out::println);
     }
+
     private static void printAllEmployeeNamesStartingWithA(List<Employee> employeeList) {
         List<Employee> eNames = employeeList.stream().filter(e -> e.getName().startsWith("A")).collect(Collectors.toList());
         eNames.forEach(System.out::println);

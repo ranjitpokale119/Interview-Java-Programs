@@ -10,7 +10,7 @@ public class MapExampleWithObject {
 
     public static void main(String[] args) {
 
-        List<Staff> staff = Arrays.asList(
+        List<Staff> staffs = Arrays.asList(
                 new Staff("mkyong", 30, new BigDecimal(10000)),
                 new Staff("jack", 27, new BigDecimal(20000)),
                 new Staff("lawrence", 33, new BigDecimal(30000))
@@ -19,13 +19,13 @@ public class MapExampleWithObject {
 
         //Before Java 8
         List<String> result = new ArrayList<>();
-        for (Staff x : staff) {
+        for (Staff x : staffs) {
             result.add(x.getName());
         }
         System.out.println(result); //[mkyong, jack, lawrence]
 
         //Java 8
-        List<String> collect = staff.stream().map(x -> x.getName()).sorted().collect(Collectors.toList());
+        List<String> collect = staffs.stream().map(x -> x.getName()).sorted().collect(Collectors.toList());
         System.out.println(collect); //[mkyong, jack, lawrence]
 
     }

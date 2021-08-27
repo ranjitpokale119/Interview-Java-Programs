@@ -1,0 +1,11 @@
+When to Use Which method?
+We can use the Eager initialization only if the cost of initializing a class is not so high with respect to resources or when your program will always need the object of a class.
+If we want to provide the exception handling with the Eager Initialization method, then we can use the Static block in Eager initialization. Using this method, we can also have control over instances.
+We can use the Double-check Locking mechanism when we want to create a Singleton class for a multithreaded environment. To implement this method, make the method synchronized so that the application can work in a multithreading environment.
+Bill Pugh implementation is the most widely used approach for singleton classes. Most developers prefer it because of its simplicity and advantages.
+Summary
+Here we come to the end of the article on Singleton class in Java. We came to know that this class contains a single object. With the help of private constructors and getInstance() factory method, we can create a Singleton class.
+
+There are different techniques to create a singleton class that we discussed in this article. All methods are different, and we can use them according to the requirement of the application.
+
+There are some pros and cons for each method; you can choose any of these methods to create a singleton class as per your needs. All these methods serve the same purpose of creating a Singleton class.

@@ -1,7 +1,9 @@
 package com.CommonClasses;
 
 import java.util.Arrays;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 public class Employee {
     private Integer id;
@@ -18,6 +20,11 @@ public class Employee {
         this.gender = gender;
     }
 
+    public Employee(Integer id, String name) {
+        this.id = id;
+        this.name = name;
+    }
+
     public static List<Employee> getAllEmployees() {
         return Arrays.asList(
                 new Employee(1, "Jay", 40000, 'M'),
@@ -27,6 +34,18 @@ public class Employee {
                 new Employee(5, "Sakshi", 80000, 'F'),
                 new Employee(6, "Rohan", 30000, 'M')
         );
+    }
+
+    public static Map<Integer, Employee> getAllEmployeeMap() {
+
+        Map<Integer, Employee> map = new HashMap<>();
+        map.put(1, new Employee(1, "Jay", 40000, 'M'));
+        map.put(2, new Employee(2, "Aakash", 50000, 'M'));
+        map.put(3, new Employee(3, "aarav", 57000, 'M'));
+        map.put(4, new Employee(4, "Vaishnavi", 70000, 'F'));
+        map.put(5, new Employee(5, "Sakshi", 80000, 'F'));
+        map.put(6, new Employee(6, "Rohan", 30000, 'M'));
+        return map;
     }
 
 

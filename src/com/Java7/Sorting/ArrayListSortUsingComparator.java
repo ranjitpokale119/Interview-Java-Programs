@@ -28,6 +28,8 @@ public class ArrayListSortUsingComparator {
         //Collections.sort(list, new EmployeeNameComp());
         //Using Java 8
         Collections.sort(list, Comparator.comparing(Employee::getName));
+        list.forEach(System.out::println);
+        System.out.println("Sorted list entries using Comparator.comparing: ");
         Collections.sort(list, (e1, e2) -> e1.getName().compareTo(e2.getName()));
 
         System.out.println("Sorted list entries using Name:EmployeeNameComp: ");
